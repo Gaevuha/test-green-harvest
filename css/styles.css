@@ -362,7 +362,6 @@ address {
 /*hero*/
 
 .hero {
-    min-height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -473,9 +472,6 @@ address {
 
 @media (min-width: 1280px) {
 
-.hero {
-  min-height: 100vh;
-    }
 .hero .container {
   flex-direction: row;
   gap: 38px;
