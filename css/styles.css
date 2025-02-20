@@ -76,8 +76,8 @@ address {
 
 
 .container {
-    width: 100%;
-    max-width: 100%;
+    min-width: 320px;
+    max-width: 375px;
     padding: 0 20px;
     margin: 0 auto;
 }
@@ -159,9 +159,6 @@ address {
 }
 
 /*mobile menu*/
-.header {
-    position: relative;
-}
 .mobile-menu {
   position: fixed;
   top: 0;
