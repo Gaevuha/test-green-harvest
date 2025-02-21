@@ -30,14 +30,14 @@
           </svg>
         </a>
         <nav class="header-menu">
-          <ul class="header-menu-list">
-            <li class="header-menu-item">
+          <ul class="menu-list">
+            <li class="menu-item">
               <a class="link-menu" href="">How It Works</a>
             </li>
-            <li class="header-menu-item">
+            <li class="menu-item">
               <a class="link-menu" href="">Vegetables</a>
             </li>
-            <li class="header-menu-item">
+            <li class="menu-item">
               <a class="link-menu" href="">Reviews</a>
             </li>
           </ul>
@@ -62,8 +62,8 @@
           </button>
           <nav class="mobile-navigation">
             <ul class="menu-list">
-              <li class="menu-item accent">
-                <a class="link-menu accent" href="">How It Works</a>
+              <li class="menu-item">
+                <a class="link-menu" href="">How It Works</a>
               </li>
               <li class="menu-item">
                 <a class="link-menu" href="">Vegetables</a>
@@ -90,6 +90,92 @@
             </p>
           </div>
           <div class="hero-image"></div>
+        </div>
+      </section>
+      <section class="works">
+        <div class="container">
+          <div class="works-wrap-image">
+            <picture>
+              <source
+                srcset="./images/wooman.webp 1x, ./images/wooman@2x.webp 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./images/tablet-wooman.webp    1x,
+                  ./images/tablet-wooman@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                width="640"
+                height="640"
+              />
+              <source
+                srcset="
+                  ./images/mobile-wooman.webp    1x,
+                  ./images/mobile-wooman@2x.webp 2x
+                "
+                media="(min-width: 375px)"
+                width="335"
+                height="452"
+              />
+              <img
+                src="./images/wooman.webp"
+                class="works-image"
+                alt="wooman"
+                width="440"
+                height="560"
+              />
+            </picture>
+          </div>
+          <div class="works-wrap-content">
+            <h2 class="works-title">
+              To order your
+              <span class="works-title-accent">vegetable</span> basket, simply
+              follow these
+              <span class="works-title-accent">easy steps</span>
+            </h2>
+            <p class="works-text">
+              Our baskets are assembled with care and delivered straight to your
+              doorstep, so you can enjoy the taste of fresh fruit without ever
+              leaving your home.
+            </p>
+            <ol class="works-list">
+              <li class="works-item">
+                <div class="works-number"></div>
+                <p class="text-item">
+                  Just choose
+                  <span class="text-item-accent">the vegetable</span> you want
+                  to order
+                  <span class="hyphenation tablet"
+                    >by clicking on the checkboxes
+                    <span class="text-item-accent">next to it.</span></span
+                  >
+                </p>
+              </li>
+              <li class="works-item">
+                <div class="works-number"></div>
+                <p class="text-item">
+                  Click on <span class="text-item-accent">the basket</span> and
+                  fill
+                  <span class="hyphenation">out the form.</span>
+                </p>
+              </li>
+              <li class="works-item">
+                <div class="works-number"></div>
+                <p class="text-item">
+                  Sit back and relax! Your
+                  <span class="text-item-accent">fresh vegetables</span>
+                  <span class="hyphenation tablet"
+                    >basket will be delivered.</span
+                  >
+                </p>
+              </li>
+              <!-- <li class="works-item">
+            <div class="works-number"></div>
+            <p class="text-item">This test text</p>
+          </li> -->
+            </ol>
+          </div>
         </div>
       </section>
     </main>
