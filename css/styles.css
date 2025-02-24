@@ -9,6 +9,7 @@
 
 body {
   font-family: "Inter Tight", sans-serif;
+  background-color: #fbfbfb;
   color: #fbfbfb;
 }
 
@@ -933,4 +934,84 @@ address {
   .vegetables-item {  
   width: calc((100% - 48px) / 3);
 }
+}
+/*reviews*/
+
+
+.reviews {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.reviews-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+  margin-bottom: 20px;
+}
+
+.reviews-title span {
+  color: #576f35;
+}
+.reviews-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #141414;
+  margin-bottom: 40px;
+}
+
+.my-dots {
+  display: none;
+}
+
+.your-class.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-initialized .reviews-item.slick-slide {
+  display: flex;
+}
+
+.reviews-item {
+  width: 100%; 
+  min-width: 320px; 
+  max-width: 375px;
+  height: 228px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid #d4bfc4;
+  border-radius: 24px;
+  padding: 20px 16px;
+ 
+}
+.reviews-image {
+  margin-bottom: 24px;
+}
+.reviews-item-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #141414;
+  margin-bottom: 8px;
+}
+.reviews-item-text {
+  width: 290px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  color: #858585;
+}
+
+@media screen and (min-width: 768px) {
+
+
 }
