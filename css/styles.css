@@ -464,14 +464,14 @@ address {
     width: 100%;
     min-height: 372px;
     flex-grow: 1;
-    background: url('/img/mobile-bg-hero.webp') center/cover no-repeat;
+    background: url('../img/mobile-bg-hero.webp') center/cover no-repeat;
 }
 
  @media screen and (min-resolution: 192dpi) and (max-width: 767px), 
 (-webkit-min-device-pixel-ratio: 2) and (max-width: 767px) {
   
 .hero-image {
-  background: url('/img/mobile-bg-hero@2x.webp') center/cover no-repeat;
+  background: url('../img/mobile-bg-hero@2x.webp') center/cover no-repeat;
   }
 }
 
@@ -497,14 +497,14 @@ address {
 
 .hero-image {
     min-height: 536px;
-    background: url('/img/tablet-bg-hero.webp') center/cover no-repeat;
+    background: url('../img/tablet-bg-hero.webp') center/cover no-repeat;
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1279px), 
        (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1279px) {
   
 .hero-image {
-  background: url('/img/tablet-bg-hero@2x.webp') center/cover no-repeat;
+  background: url('../img/tablet-bg-hero@2x.webp') center/cover no-repeat;
   }
 }
 }
@@ -536,13 +536,13 @@ address {
 .hero-image {
     max-width: 640px;
     flex-grow: 1;    
-    background: url('/img/bg-hero.webp') center/cover no-repeat;
+    background: url('../img/bg-hero.webp') center/cover no-repeat;
     min-height: 100%;
 }
 
  @media screen and (min-resolution: 192dpi) and (min-width: 1200px), (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px) {
 .hero-image{
-   background: url('/img/bg-hero@2x.webp') center/cover no-repeat;
+   background: url('../img/bg-hero@2x.webp') center/cover no-repeat;
   }
 }
 }
