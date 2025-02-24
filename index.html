@@ -19,14 +19,11 @@
     <title>Green harvest</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header animated">
       <div class="container">
         <a class="link-logo" href="index.html">
           <svg class="logo-header">
-            <use href="./images/icons.svg#icon-logo"></use>
-          </svg>
-          <svg class="logo-header-title">
-            <use href="./images/icons.svg#icon-logo-title"></use>
+            <use href="/img/sprite.svg#icon-logo"></use>
           </svg>
         </a>
         <nav class="header-menu">
@@ -46,18 +43,16 @@
 
         <button class="burger-btn" type="button" data-menu-open>
           <svg class="burger-icon">
-            <use href="./images/icons.svg#icon-menu-btn"></use>
+            <use href="/img/sprite.svg#icon-burger"></use>
           </svg>
         </button>
       </div>
 
-      <div class="overlay" data-overlay></div>
-
       <div class="mobile-menu" data-menu>
         <div class="mobile-menu-container">
           <button class="mobile-menu-close" data-menu-close>
-            <svg class="mobile-icons-close" width="32" height="32">
-              <use href="./images/icons.svg#icon-close-menu"></use>
+            <svg class="mobile-icons-close">
+              <use href="/img/sprite.svg#icon-exit"></use>
             </svg>
           </button>
           <nav class="mobile-navigation">
@@ -76,6 +71,7 @@
           </nav>
         </div>
       </div>
+      <div class="overlay"></div>
     </header>
     <main>
       <section class="hero">
@@ -94,46 +90,39 @@
       </section>
       <section class="works">
         <div class="container">
-          <div class="works-wrap-image">
-            <picture>
-              <source
-                srcset="./images/wooman.webp 1x, ./images/wooman@2x.webp 2x"
-                media="(min-width: 1280px)"
-              />
-              <source
-                srcset="
-                  ./images/tablet-wooman.webp    1x,
-                  ./images/tablet-wooman@2x.webp 2x
-                "
-                media="(min-width: 768px)"
-                width="640"
-                height="640"
-              />
-              <source
-                srcset="
-                  ./images/mobile-wooman.webp    1x,
-                  ./images/mobile-wooman@2x.webp 2x
-                "
-                media="(min-width: 375px)"
-                width="335"
-                height="452"
-              />
-              <img
-                src="./images/wooman.webp"
-                class="works-image"
-                alt="wooman"
-                width="440"
-                height="560"
-              />
-            </picture>
-          </div>
+          <picture>
+            <source
+              srcset="/img/wooman.webp 1x, /img/wooman@2x.webp 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/img/tablet-wooman.webp 1x, /img/tablet-wooman@2x.webp 2x"
+              media="(min-width: 768px)"
+              width="640"
+              height="640"
+            />
+            <source
+              srcset="/img/mobile-wooman.webp 1x, /img/mobile-wooman@2x.webp 2x"
+              media="(min-width: 375px)"
+              width="335"
+              height="452"
+            />
+            <img
+              src="/img/wooman.webp"
+              class="works-image"
+              alt="wooman"
+              width="440"
+              height="560"
+            />
+          </picture>
           <div class="works-wrap-content">
-            <h2 class="works-title">
+            <h2 class="visually-hidden">How it works</h2>
+            <b class="works-title">
               To order your
               <span class="works-title-accent">vegetable</span> basket, simply
               follow these
               <span class="works-title-accent">easy steps</span>
-            </h2>
+            </b>
             <p class="works-text">
               Our baskets are assembled with care and delivered straight to your
               doorstep, so you can enjoy the taste of fresh fruit without ever
@@ -141,19 +130,14 @@
             </p>
             <ol class="works-list">
               <li class="works-item">
-                <div class="works-number"></div>
                 <p class="text-item">
                   Just choose
                   <span class="text-item-accent">the vegetable</span> you want
-                  to order
-                  <span class="hyphenation tablet"
-                    >by clicking on the checkboxes
-                    <span class="text-item-accent">next to it.</span></span
-                  >
+                  to order by clicking on the checkboxes
+                  <span class="text-item-accent">next to it.</span>
                 </p>
               </li>
               <li class="works-item">
-                <div class="works-number"></div>
                 <p class="text-item">
                   Click on <span class="text-item-accent">the basket</span> and
                   fill
@@ -161,21 +145,233 @@
                 </p>
               </li>
               <li class="works-item">
-                <div class="works-number"></div>
                 <p class="text-item">
                   Sit back and relax! Your
                   <span class="text-item-accent">fresh vegetables</span>
-                  <span class="hyphenation tablet"
-                    >basket will be delivered.</span
-                  >
+                  basket will be delivered.
                 </p>
               </li>
-              <!-- <li class="works-item">
-            <div class="works-number"></div>
-            <p class="text-item">This test text</p>
-          </li> -->
             </ol>
           </div>
+        </div>
+      </section>
+      <section class="advertisement">
+        <div class="container">
+          <h2 class="visually-hidden">advertisement</h2>
+          <p class="advertisement-text">
+            <span class="advertisement-text-accent">Discount up to 40%!</span>
+            Taste the vitamins and keep your health
+          </p>
+        </div>
+      </section>
+      <section class="vegetables">
+        <div class="container">
+          <h2 class="vegetables-title">organic <span>vegetables</span></h2>
+          <p class="vegetables-text">
+            Our organic vegetables are hand-picked from local farms and
+            delivered straight to your doorstep, ensuring that you get the
+            freshest and most nutritious produce possible.
+          </p>
+          <ul class="vegetables-list">
+            <li class="vegetables-item">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="vegetables-item-title">eggplant</h3>
+                  <p class="vegetables-item-text">60 USD / kg</p>
+                  <picture>
+                    <source
+                      srcset="/img/eggplant.webp 1x, /img/eggplant@2x.webp 2x"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        /img/eggplant-tablet-mobile.webp    1x,
+                        /img/eggplant-tablet-mobile@2x.webp 2x
+                      "
+                      media="(min-width: 375px)"
+                      width="280"
+                      height="240"
+                    />
+                    <img
+                      src="/img/eggplant.webp"
+                      class="vegetables-image"
+                      alt="eggplant"
+                      width="280"
+                      height="244"
+                    />
+                  </picture>
+                </div>
+                <div class="flip-card-back">
+                  <p class="discount-text">Знижка була вчора!</p>
+                </div>
+              </div>
+            </li>
+            <li class="vegetables-item">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="vegetables-item-title">leek</h3>
+                  <p class="vegetables-item-text">50 USD / kg</p>
+                  <picture>
+                    <source
+                      srcset="/img/leek.webp 1x, /img/leek@2x.webp 2x"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        /img/leek-tablet-mobile.webp    1x,
+                        /img/leek-tablet-mobile@2x.webp 2x
+                      "
+                      media="(min-width: 375px)"
+                      width="280"
+                      height="240"
+                    />
+                    <img
+                      src="/img/leek.webp"
+                      class="vegetables-image"
+                      alt="leek"
+                      width="280"
+                      height="244"
+                    />
+                  </picture>
+                </div>
+                <div class="flip-card-back">
+                  <p class="discount-text">Знижка буде завтра!</p>
+                </div>
+              </div>
+            </li>
+            <li class="vegetables-item">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="vegetables-item-title">mushrooms</h3>
+                  <p class="vegetables-item-text">40 USD / kg</p>
+                  <picture>
+                    <source
+                      srcset="/img/mushrooms.webp 1x, /img/mushrooms@2x.webp 2x"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        /img/mushrooms-tablet-mobile.webp    1x,
+                        /img/mushrooms-tablet-mobile@2x.webp 2x
+                      "
+                      media="(min-width: 375px)"
+                      width="280"
+                      height="240"
+                    />
+                    <img
+                      src="/img/mushrooms.webp"
+                      class="vegetables-image"
+                      alt="mushrooms"
+                      width="280"
+                      height="244"
+                    />
+                  </picture>
+                </div>
+                <div class="flip-card-back">
+                  <p class="discount-text">Знижка сьогодні 30%!</p>
+                </div>
+              </div>
+            </li>
+            <li class="vegetables-item">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="vegetables-item-title">corn</h3>
+                  <p class="vegetables-item-text">60 USD / kg</p>
+                  <picture>
+                    <source
+                      srcset="/img/corn.webp 1x, /img/corn@2x.webp 2x"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        /img/corn-tablet-mobile.webp    1x,
+                        /img/corn-tablet-mobile@2x.webp 2x
+                      "
+                      media="(min-width: 375px)"
+                      width="280"
+                      height="240"
+                    />
+                    <img
+                      src="/img/corn.webp"
+                      class="vegetables-image"
+                      alt="corn"
+                      width="280"
+                      height="244"
+                    />
+                  </picture>
+                </div>
+                <div class="flip-card-back">
+                  <p class="discount-text">Знижка сьогодні 40%!</p>
+                </div>
+              </div>
+            </li>
+            <li class="vegetables-item">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="vegetables-item-title">sweet potatoes</h3>
+                  <p class="vegetables-item-text">50 USD / kg</p>
+                  <picture>
+                    <source
+                      srcset="/img/potato.webp 1x, /img/potato@2x.webp 2x"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        /img/potato-tablet-mobile.webp    1x,
+                        /img/potato-tablet-mobile@2x.webp 2x
+                      "
+                      media="(min-width: 375px)"
+                      width="280"
+                      height="240"
+                    />
+                    <img
+                      src="/img/potato.webp"
+                      class="vegetables-image"
+                      alt="potatoes"
+                      width="280"
+                      height="245"
+                    />
+                  </picture>
+                </div>
+                <div class="flip-card-back">
+                  <p class="discount-text">Знижка сьогодні 40%!</p>
+                </div>
+              </div>
+            </li>
+            <li class="vegetables-item">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3 class="vegetables-item-title">carrot</h3>
+                  <p class="vegetables-item-text">40 USD / kg</p>
+                  <picture>
+                    <source
+                      srcset="/img/carrot.webp 1x, /img/carrot@2x.webp 2x"
+                      media="(min-width: 1280px)"
+                    />
+                    <source
+                      srcset="
+                        /img/carrot-tablet-mobile.webp    1x,
+                        /img/carrot-tablet-mobile@2x.webp 2x
+                      "
+                      media="(min-width: 375px)"
+                      width="280"
+                      height="240"
+                    />
+                    <img
+                      src="/img/carrot.webp"
+                      class="vegetables-image"
+                      alt="carrot"
+                      width="280"
+                      height="245"
+                    />
+                  </picture>
+                </div>
+                <div class="flip-card-back">
+                  <p class="discount-text">Знижка 80% тільки сьогодні!!</p>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
