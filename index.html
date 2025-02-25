@@ -102,37 +102,40 @@
       </section>
       <section class="works">
         <div class="container">
-          <picture>
-            <source
-              srcset="./img/wooman.webp 1x, ./img/wooman@2x.webp 2x"
-              media="(min-width: 1280px)"
-            />
-            <source
-              srcset="
-                ./img/tablet-wooman.webp    1x,
-                ./img/tablet-wooman@2x.webp 2x
-              "
-              media="(min-width: 768px)"
-              width="640"
-              height="640"
-            />
-            <source
-              srcset="
-                ./img/mobile-wooman.webp    1x,
-                ./img/mobile-wooman@2x.webp 2x
-              "
-              media="(min-width: 375px)"
-              width="335"
-              height="452"
-            />
-            <img
-              src="./img/wooman.webp"
-              class="works-image"
-              alt="wooman"
-              width="440"
-              height="560"
-            />
-          </picture>
+          <h2 class="hidden-how visually-hidden">How it works</h2>
+          <div class="works-wrap-img">
+            <picture>
+              <source
+                srcset="./img/wooman.webp 1x, ./img/wooman@2x.webp 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/tablet-wooman.webp    1x,
+                  ./img/tablet-wooman@2x.webp 2x
+                "
+                media="(min-width: 768px)"
+                width="640"
+                height="640"
+              />
+              <source
+                srcset="
+                  ./img/mobile-wooman.webp    1x,
+                  ./img/mobile-wooman@2x.webp 2x
+                "
+                media="(max-width: 767px)"
+                width="335"
+                height="452"
+              />
+              <img
+                src="./img/wooman.webp"
+                class="works-image"
+                alt="wooman"
+                width="440"
+                height="560"
+              />
+            </picture>
+          </div>
           <div class="works-wrap-content">
             <h2 class="visually-hidden">How it works</h2>
             <b class="works-title">

@@ -552,11 +552,21 @@ address {
 /*How it works*/
 
 .works {
+  background: linear-gradient(to bottom, #7a3145 532px, #576f35 532px);
   padding-top: 40px;
-  background: linear-gradient(to bottom, #7a3145 0%, #7a3145 532px, #576f35 532px, #576f35 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.works-wrap-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .works-image {
-  margin: auto;
+  margin-bottom: 120px;
   border-radius: 30px;
 }
 
@@ -565,8 +575,6 @@ address {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  padding-top: 120px;
-  padding-bottom: 80px;
 }
 
 .works-title {
@@ -669,6 +677,7 @@ address {
 
   .works {
    padding-top: 100px;
+   padding-bottom: 100px;
    background: linear-gradient(to bottom, #7a3145 0%, #7a3145 840px, #576f35 840px, #576f35 100%);
 
 }
@@ -676,6 +685,9 @@ address {
 .works-wrap-image {
     width: 768px;
     padding: 100px 64px;
+}
+.works-image {
+  margin-bottom: 200px;
 }
 
 .works-list {
@@ -698,7 +710,7 @@ address {
 }
 
 .works-wrap-content {
-  padding: 200px 64px 100px;
+  padding: 0 64px;
 }
 
 .works-title {
@@ -771,10 +783,17 @@ address {
 }
 
 @media screen and (min-width: 1280px) {
+.works .container {
+    gap: 200px;
+  }
 
 .advertisement-text {
   max-width: 1050px;
   font-size: 76px;
+}
+
+.works-image {
+  margin-bottom: 0;
 }
 
 .advertisement-text-accent {
