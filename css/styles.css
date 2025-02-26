@@ -564,9 +564,10 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
 }
 .works-image {
-  margin-bottom: 120px;
+ 
   border-radius: 30px;
 }
 
@@ -678,17 +679,14 @@ address {
   .works {
    padding-top: 100px;
    padding-bottom: 100px;
-   background: linear-gradient(to bottom, #7a3145 0%, #7a3145 840px, #576f35 840px, #576f35 100%);
+   background: linear-gradient(to bottom,  #7a3145 840px, #576f35 840px);
 
 }
 
-.works-wrap-image {
-    width: 768px;
-    padding: 100px 64px;
-}
-.works-image {
+.works-wrap-img {
   margin-bottom: 200px;
 }
+
 
 .works-list {
     gap: 24px;
@@ -740,6 +738,9 @@ address {
   justify-content: space-between;
   }
 
+  .works-wrap-img {
+  margin-bottom: 0;
+}
 .works-wrap-content {
   padding: 0;
 }
